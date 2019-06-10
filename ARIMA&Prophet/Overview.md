@@ -2,7 +2,9 @@
 
 A time series is a sequence of observations taken sequentially in time. Time series analysis involves developing models that best capture or describe an observed time series in order to understand the underlying causes.
 
-# 1. ARIMA
+# FORECASTING METHODS USED: 
+
+## 1. ARIMA
 
 ARIMA is a widely used statistical method for time series forecasting. It stands for *AutoRegressive Integrated Moving Average*. 
 
@@ -16,14 +18,14 @@ p: The number of lag observations included in the model, also called the lag ord
 d: The number of times that the raw observations are differenced, also called the degree of differencing.
 q: The size of the moving average window, also called the order of moving average.
 
-## Components of a Time Series data
+### *Components of a Time Series data*
 1. Trend : how things are overall changing
 
 2. Seasonality : how things change within a given period (year/month/week/day)
 
 3. Error/Residual/Irregular : activity not explained by the trend or seasonal value
 
-## Additive and Multiplicative Time Series 
+### *Additive and Multiplicative Time Series*
 To be able to analyze time series effectively, it is important to understand the interaction between general seasonality in activity and underlying trend. These interactions are classified into Additive or Multiplicative. 
 
 Additive time series - components add together to make time series. If there is an increasing trend, we will observe a roughtly same size peaks/troughs throughout the series i.e., absolute value keeps growing but changes stay relative. The model assumes that the residual are roughly same size throughout the series.
@@ -31,5 +33,5 @@ Additive time series - components add together to make time series. If there is 
 Multiplicative time series - components multiply together to make time series. If there is an increasing trend, the amplitude of seasonal activitiy increases. Common example - web traffic.
 
 
-# 2. PROPHET
+## 2. PROPHET
 In 2017, Facebook released a forecasting tool Prophet designed for analyzing time series data that display patterns on different time scales such as - yearly, weekly, daily. It also has advanced capabilities for modeling the effect of holidays on time series and implementing custom changepoints.
