@@ -36,4 +36,4 @@ Multiplicative time series - components multiply together to make time series. I
 ## 2. PROPHET
 In 2017, Facebook released a forecasting tool Prophet designed for analyzing time series data that display patterns on different time scales such as - yearly, weekly, daily. It also has advanced capabilities for modeling the effect of holidays on time series and implementing custom changepoints.
 
-*[Reference](https://xang1234.github.io/prophet/)
+*[Reference](https://xang1234.github.io/prophet/)*
