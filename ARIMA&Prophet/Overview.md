@@ -2,13 +2,6 @@
 
 A time series is a sequence of observations taken sequentially in time. Time series analysis involves developing models that best capture or describe an observed time series in order to understand the underlying causes.
 
-## Components of a Time Series data
-1. Trend : how things are overall changing
-
-2. Seasonality : how things change within a given period (year/month/week/day)
-
-3. Error/Residual/Irregular : activity not explained by the trend or seasonal value
-
 # 1. ARIMA
 
 ARIMA is a widely used statistical method for time series forecasting. It stands for *AutoRegressive Integrated Moving Average*. 
@@ -23,6 +16,12 @@ p: The number of lag observations included in the model, also called the lag ord
 d: The number of times that the raw observations are differenced, also called the degree of differencing.
 q: The size of the moving average window, also called the order of moving average.
 
+## Components of a Time Series data
+1. Trend : how things are overall changing
+
+2. Seasonality : how things change within a given period (year/month/week/day)
+
+3. Error/Residual/Irregular : activity not explained by the trend or seasonal value
 
 ## Additive and Multiplicative Time Series 
 To be able to analyze time series effectively, it is important to understand the interaction between general seasonality in activity and underlying trend. These interactions are classified into Additive or Multiplicative. 
