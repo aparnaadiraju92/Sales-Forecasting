@@ -24,9 +24,9 @@ Multiplicative time series - components multiply together to make time series. I
 
 2. Exponential smoorting - appropriate for non-stationary data (i.e., data with trend and seasonal data).
 
-a. Simple Exponential smoothing : used when there are few data points, data is irregular, no seasonality or trend. Forecast is made of just one component - level which is the weighted average of previous level and current observation.
+  a. Simple Exponential smoothing : used when there are few data points, data is irregular, no seasonality or trend. Forecast is made of just one component - level which is the weighted average of previous level and current observation.
 
-b. Holt's Linear smoothing : used when there is trend in data and no seasonality. Forecast is made of level component and trend component.
+  b. Holt's Linear smoothing : used when there is trend in data and no seasonality. Forecast is made of level component and trend component.
 
 # FORECASTING METHODS USED: 
 
@@ -35,16 +35,20 @@ b. Holt's Linear smoothing : used when there is trend in data and no seasonality
 ARIMA is a widely used statistical method for time series forecasting. It stands for *AutoRegressive Integrated Moving Average*. 
 
 AR : AutoRegression - model using dependent relation between observation and some number of lagged observations.
+
 I  : Integrated - model using the difference of raw observations (i.e., subtracting an observation from an observation at previous time step) in order to make the time series stationary. 
+
 MA : Moving Average - model used dependency between observation and residual error from a moving average model applied to lagged observations.
 
 The parameters of the ARIMA model are defined as follows:
 
 p: The number of lag observations included in the model, also called the lag order.  A weighted sum of lagged values of the series. (AR part)
+
 d: The number of times that the raw observations are differenced, also called the degree of differencing. A difference of time series (I part)
+
 q: The size of the moving average window, also called the order of moving average. A weighted sum of lagged forecasted errors of the series (MA part)
 
-There are several multiple ways to choose p,d,q values for the ARIMA model. In this project, I have used the Akaike Information Critera (AIC) is the used measure. It basically quantifies 1) the goodness of fit, and 2) the simplicity/parsimony, of the model into a single statistic. When comparing two models, the one with the lower AIC is generally “better”.
+There are several multiple ways to choose p,d,q values for the ARIMA model. In this project, I have used the Akaike Information Critera (AIC) is the used measure. It basically quantifies : the goodness of fit, and the simplicity of the model. When comparing two models, the one with the lower AIC is generally “better”.
 
 ## 2. PROPHET
 In 2017, Facebook released a forecasting tool Prophet designed for analyzing time series data that display patterns on different time scales such as - yearly, weekly, daily. It also has advanced capabilities for modeling the effect of holidays on time series and implementing custom changepoints.
