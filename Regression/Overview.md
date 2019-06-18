@@ -7,3 +7,8 @@ Regression models (both linear and non-linear) are used for predicting a real va
 3. Decision Trees
 4. Random Forest
 5. XGBoost
+
+https://github.com/meizmyang/Rossmann-Sales-Prediction/blob/master/Rossmann_Store_Sales_Prediction_Using_Regression.ipynb
+
+https://www.kaggle.com/cast42/xgboost-in-python-with-rmspe-v2
+
