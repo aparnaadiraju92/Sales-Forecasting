@@ -22,7 +22,7 @@ Multiplicative time series - components multiply together to make time series. I
 
 1. ARIMA models - appropriate for stationary data only. Remove trend before applying model.
 
-2. Exponential smoorting - appropriate for non-stationary data (i.e., data with trend and seasonal data).
+2. Exponential smoorting![https://machinelearningmastery.com/exponential-smoothing-for-time-series-forecasting-in-python/] - appropriate for non-stationary data (i.e., data with trend and seasonal data). 
 
   a. Simple Exponential smoothing : used when there are few data points, data is irregular, no seasonality or trend. Forecast is made of just one component - level which is the weighted average of previous level and current observation.
 
